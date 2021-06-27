@@ -106,7 +106,7 @@ Slf4j 的 loggers 通过调用 `LoggerFactory` 的 `getLogger()` 方法创建
 import org.slf4j.LoggerFactory
 import org.slf4j.Logger
 
-Logger LOG = LoggerFactory.getLogger(Foobar.class)
+Logger LOG = LoggerFactory.getLogger(Foobar.class);
 ```
 
 为了最大限度地利用 slf4j，建议使用其占位符机制。使用占位符可以避免不必要的字符串构造，以防日志级别设置得太高而不会记录消息。占位符的语法如下：
